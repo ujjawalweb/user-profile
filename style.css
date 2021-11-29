@@ -454,10 +454,10 @@ font-weight: 600;
 	  .bg-dark{margin-top: -30px;height:35px;}
 	  .cont{padding:15px 0 !important;}
 	  
-	  .contact-detail{position: relative;
-    top: -58px;margin-bottom: 25px !important;
-
-}
+	  .contact-detail{    position: relative;
+    top: -67px;
+    margin-bottom: 18px !important;
+	  }
 
 
 #edit-button{width:12px;}
