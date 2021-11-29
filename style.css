@@ -536,7 +536,7 @@ width: 88px;
     font-size: 17px;
 }
 
-#edit{    margin-top: 4px!important;}
+#edit{    margin-top: -1px!important;}
 .pics{width:96px;height:96px;margin-top: -51px;}
 
 #mob{position: relative!important;
