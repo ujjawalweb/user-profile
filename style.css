@@ -953,19 +953,6 @@ position: relative;
   
   }
 
-    @media only screen 
-  and (min-device-width: 870px) 
-  and (max-device-width: 873px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-.box2 {
-    border: 2px solid #708591;
-    width: 110px;
-    font-size: 20px;
-    color: #49631b;
-    position: relative !important;
-left: 151px !important;}
-  }
 
 
 @media only screen and (max-width: 600px) {
