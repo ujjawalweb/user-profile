@@ -448,6 +448,11 @@ font-weight: 600;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 	  
+	  .main-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
 	  ::placeholder{font-size:10px!important;}
 	  .bt {
     background: linear-gradient(to bottom,#fad961,#d8af1a) !important;
