@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 /">
+  
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+
+    <title>KYC Form</title>
+<style>
+
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+<div class="main" style="border-radius:30px;">
+<div class="container">
+<div class="row">
+  <div class="col-md-12 bg-dark kyc">
+		  <h3 class="text-center heading text-white p-1">My Profile</h3>
+		  </div>
+
+	<div class="wrapper">
+
+		<!-- COMPANY INFORMATION -->
+		<div class="company-info">
+	<span class="box">Club<span class="club"><img src="images/01-12.png" width="25"></span></span>
+  <span class="box2">VIP Points<span class="point">68</span></span>
+      <h4 id="edit" style="text-align:center;font-weight:600;color:#000;margin-top:39px;">Faizan Ali <img src="images/01-08.png" id="edit-button" width="20"> <button type="submit" id="end-editing">Save</button></h4>
+      <div class="links">
+	
+<img src="images/pics.png" class="pics"><img src="images/52.png" class="camera">
+'
+
+      </div>
+	  <div class="main-btn">
+<div class="upload-btn-wrapper">
+  <button class="btns" id="my-btn"><img src="images/01-10.png" width="20"> &nbsp; Gallery</button>
+  <input type="file" name="myfile" />
+</div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<div class="upload-btn-wrapper">
+  <button class="btns" id="my-btn2"><img src="images/01-11.png" width="25"> &nbsp; Avatar</button>
+  <input type="file" name="myfile" />
+</div>
+
+</div>
+
+ <div class="last-btn">
+<button class="bt" id="my-btn3">Save &nbsp; <img src="images/01-09.png" width="18"></button>
+</div>
+		</div>
+		<!-- End .company-info -->
+
+		<!-- CONTACT FORM -->
+		<div class="contact">
+			
+
+<form class="form-horizontal">
+            <fieldset>
+
+            <!-- Form Name -->
+            <legend>Personal Details</legend>
+            <!-- Select Basic -->
+      
+             
+          
+           
+
+
+            <!-- Text input-->
+            <div class="form-group">
+             
+              <div class="col-md-12">
+			  <div class="flx1">
+			   <label>Full Name</label> 
+                <input  name="textinput" type="text" placeholder="" class="form-control">
+            </div>
+
+
+    
+              <div class="flx2">
+			   <label>City</label> 
+                <input  name="textinput" type="text" placeholder="" class="form-control">
+             </div>
+			   
+          <div class="flx3">
+			  <label>State</label>  
+                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control">
+              </div>
+			  
+			    
+			 <div class="flx4">
+				<label>Date Of Birth</label>
+  	<input id="textinput" name="textinput" type="date" placeholder="" class="form-control">
+</div>
+  
+ <div class="flx5">
+			   <label>Language</label>
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                  <option value="1">Hindi</option>
+                  <option value="2">English</option>
+              </div>
+                </select>
+				
+				<button class="bt" id="update">Updated</button>
+              </div>
+			  </div>
+<!-- Multiple Radios (inline) -->
+
+
+
+</fieldset>
+</form>
+
+
+
+<form class="form-horizontal">
+            <fieldset>
+
+            <!-- Form Name -->
+            <legend>Contact Details</legend>
+            <!-- Select Basic -->
+      
+             
+          
+           
+
+
+            <!-- Text input-->
+            <div class="form-group">
+             
+              <div class="col-md-12">
+			  <div class="flx6">
+			   <label>Mobile No</label> 
+                <input  name="textinput" type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button>
+            </div>
+			
+		<div class="flx7">
+			   <label>Email</label> 
+                <input  name="textinput" type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail">&nbsp; <img src="images/01-09.png" class="tick">
+             </div>
+
+			<!-- End #contact-form -->
+		</div>
+		<!-- End .contact -->
+
+	</div>
+	
+	</fieldset>
+	</form>
+	
+	<!-- End .wrapper -->
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- End .container -->
+<script>
+const paragraph = document.getElementById("edit");
+const edit_button = document.getElementById("edit-button");
+const end_button = document.getElementById("end-editing");
+
+edit_button.addEventListener("click", function() {
+  paragraph.contentEditable = true;
+  paragraph.style.backgroundColor = "#dddbdb";
+} );
+
+end_button.addEventListener("click", function() {
+  paragraph.contentEditable = false;
+  paragraph.style.backgroundColor = "#ffe44d";
+} )
+
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#edit-button").click(function(){
+    $("#edit-button").hide();
+  });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#edit-button").click(function(){
+    $("#end-editing").show();
+  });
+
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(".camera").click(function(){
+    $("#my-btn,#my-btn2,#my-btn3").css("display", "block");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".camera").click(function(){
+    $(".camera").css("display", "none");
+  });
+});
+</script>
+</body>
+</html>
