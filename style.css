@@ -460,6 +460,8 @@ font-weight: 600;
     background: #000;
 	  color: red;}
 	  
+	  input[type=date]{font-size:10px!important;}
+	  
 	  .main-btn {
     display: flex;
     justify-content: center;
@@ -650,7 +652,7 @@ top: -32px;}
     margin-left: -14px;
 }
 
-
+#for{width:53%!important;}
 
 	
   }
@@ -713,7 +715,7 @@ top: -32px;}
     position: relative!important;
     top: -87px !important;
     margin-left: -23px;
-    width: 43%!important;}
+    width: 53%!important;}
 	
 	#bts2 {
        top: -156px;
@@ -831,7 +833,7 @@ top: -32px;}
     left: 22px;
     margin-left: 153px;
   
-    width: 43%!important;
+    width: 53%!important;
 }
 
 #bts2 {
@@ -932,7 +934,7 @@ left: 49px;
     top: -85px!important;
 
     margin-left: 165px;
-    width: 35%!important;}
+    width: 53%!important;}
 	
 	#bts2 {
     top: -155px;
@@ -1388,7 +1390,7 @@ left: 137px !important;}
     font-size: 20px;
     color: #49631b;
     position: relative !important;
-left: 113px !important;}
+left: 82px !important;}
 .camera {
     width: 28px;
     height: 28px;
