@@ -970,7 +970,7 @@ position: relative;
 	.contact{width: 326px;
     height: 485px;
 }
-
+body,html{overflow-x:hidden;}
 .heading {
     font-weight: 800;
     font-size: 26px;
