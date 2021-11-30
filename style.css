@@ -12,6 +12,9 @@
   box-sizing: border-box;
 }
 
+#end-editing:before{content:"";position:absolute;left:-100px;bottom:
+0px;width:90px;height:1px;background:#000;color:red;}
+
 #my-btn{display:none;}
 #my-btn2{display:none;}
 #my-btn3{display:none;}
@@ -24,7 +27,7 @@
 
 
 
-#end-editing{display:none;}
+#end-editing{display:none;position:relative;}
 
 .text {
   outline: none;
@@ -447,6 +450,15 @@ font-weight: 600;
   and (max-device-width: 875px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+	  #end-editing:before {
+    content: "";
+    position: absolute;
+    left: -73px;
+    bottom: 0px;
+    width: 68px;
+    height: 1px;
+    background: #000;
+	  color: red;}
 	  
 	  .main-btn {
     display: flex;
@@ -969,6 +981,18 @@ position: relative;
 	.contact{width: 326px;
     height: 485px;
 }
+
+#end-editing:before {
+    content: "";
+    position: absolute;
+    left: -68px;
+    bottom: 0px;
+    width: 62px;
+    height: 1px;
+    background: #000;
+color: red;}
+
+
 .main-btn {
     display: flex;
     justify-content: center;
@@ -1335,15 +1359,14 @@ left: 137px !important;}
 }
 		}
 		
-
-						@media only screen and (min-device-width: 800px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+				@media only screen and (min-device-width: 800px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
 		.box2 {
     border: 2px solid #708591;
     width: 140px;
     font-size: 20px;
     color: #49631b;
     position: relative !important;
-		left: 85px !important;}
+		left: 105px !important;}
 		
 		.camera {
     width: 28px;
@@ -1355,7 +1378,8 @@ left: 137px !important;}
     left: 232px;
 		top: 141px;}
 		
-				}		
+				}
+				
 				
 				@media only screen and (min-device-width: 752px) and (max-device-width: 799px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
 .box2 {
