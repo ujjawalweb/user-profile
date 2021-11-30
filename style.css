@@ -983,6 +983,8 @@ position: relative;
 	.contact{width: 326px;
     height: 485px;
 }
+	
+	input[type=date]{font-size:10px!important;}
 
 #end-editing:before {
     content: "";
