@@ -1336,7 +1336,26 @@ left: 137px !important;}
 		}
 		
 
-				
+						@media only screen and (min-device-width: 800px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+		.box2 {
+    border: 2px solid #708591;
+    width: 140px;
+    font-size: 20px;
+    color: #49631b;
+    position: relative !important;
+		left: 85px !important;}
+		
+		.camera {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 232px;
+		top: 141px;}
+		
+				}		
 				
 				@media only screen and (min-device-width: 752px) and (max-device-width: 799px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
 .box2 {
@@ -1345,7 +1364,7 @@ left: 137px !important;}
     font-size: 20px;
     color: #49631b;
     position: relative !important;
-left: 113px !important;}
+left: 128px !important;}
 .camera {
     width: 28px;
     height: 28px;
