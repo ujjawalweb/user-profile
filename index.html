@@ -89,36 +89,36 @@
               <div class="col-md-12">
 			  <div class="flx1">
 			   <label>Full Name</label> 
-                <input  name="textinput" type="text" placeholder="" class="form-control" id="fname">
+                <input   type="text" placeholder="" class="form-control" id="fname">
             </div>
 
 
     
               <div class="flx2">
 			   <label>City</label> 
-                <input  name="textinput" type="text" placeholder="" class="form-control">
+                <input   type="text" placeholder="" class="form-control">
              </div>
 			   
           <div class="flx3">
 			  <label>State</label>  
-                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control">
+                <input id="textinput"  type="text" placeholder="" class="form-control">
               </div>
 			  
 			    
 			 <div class="flx4">
 				<label>Date Of Birth</label>
-  	<input id="textinput" name="textinput" type="date" placeholder="" class="form-control">
+  	<input id="textinput"  type="date" placeholder="" class="form-control">
 </div>
   
  <div class="flx5">
 			   <label>Language</label>
-                <select id="selectbasic" name="selectbasic" class="form-control">
+                <select id="selectbasic" class="form-control">
                   <option value="1">Hindi</option>
                   <option value="2">English</option>
               </div>
                 </select>
 				
-				<button class="bt" id="update">Updated</button>
+				<button class="bt"  id="update">Update</button>
               </div>
 			  </div>
 <!-- Multiple Radios (inline) -->
@@ -148,12 +148,12 @@
               <div class="col-md-12">
 			  <div class="flx6">
 			   <label>Mobile No</label> 
-                <input  name="textinput" type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button>
+                <input type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button>
             </div>
 			
 		<div class="flx7">
 			   <label>Email</label> 
-                <input  name="textinput" type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail">&nbsp; <img src="images/01-09.png" class="tick">
+                <input   type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail">&nbsp; <img src="images/01-09.png" class="tick">
              </div>
 
 			<!-- End #contact-form -->
@@ -173,6 +173,14 @@
 </div>
 </div>
 <!-- End .container -->
+
+<script>
+$('.bt').click(function () {
+    //Code goes here
+    return false;
+});
+</script>
+   
 <script>
 const paragraph = document.getElementById("edit");
 const edit_button = document.getElementById("edit-button");
@@ -224,5 +232,8 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
+
 </body>
 </html>
