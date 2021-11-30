@@ -981,7 +981,8 @@ position: relative;
     width: 326px;height:305px;border-radius:0!important;}
 	
 	.contact{width: 326px;
-    height: 485px;
+   height: 334px;
+    border-radius: 0 0 10px 10px !important;
 }
 	
 	input[type=date]{font-size:10px!important;}
