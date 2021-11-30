@@ -1277,3 +1277,39 @@ background: #b9ed70;}
 
 
 	}
+	
+		@media only screen and (max-width: 400px) and (min-width: 390px) {
+	.company-info {
+    width: 358px;
+  
+    border-radius: 0!important;
+}
+
+	.contact {
+    width: 358px;}
+	
+	.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 15px;
+    color: #49631b;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 2px 7px;
+    left: 120px;}
+	
+	.camera {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 221px;
+    top: 194px;}
+	
+	
+		}
