@@ -526,7 +526,7 @@ font-weight: 600;
 	
 	
 .btns {
-width: 88px;
+ width: 88px;
     font-weight: 600;
     height: 27px;
     margin-top: 0px;
@@ -962,8 +962,136 @@ position: relative;
 
 
 
+
 @media only screen and (max-width: 600px) {
 .company-info {
-    width: 754px;}
+    width: 326px;height:305px;border-radius:0!important;}
 	
+	.contact{width: 326px;
+    height: 485px;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 26px;
+    position: relative;
+top: 5px;}
+.box {
+    border: 2px solid #708591;
+    width: 144px;
+    font-weight: 600;
+    white-space: nowrap;
+    height: 33px;
+    font-size: 15px;
+    color: #49631b;
+    position: relative;
+    top: -13px;
+    left: -10px;
+    /* margin-top: -32px !important; */
+    padding: 0px 11px;
+    border-radius: 5px;
+background: #b9ed70;}
+
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 15px;
+    color: #49631b;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 2px 7px;
+    left: 79px;
+    top: -12px;
+    border-radius: 5px;
+background: #b9ed70;}
+
+.point {
+    border-radius: 0 5px 5px 0;
+    background: #49631b;
+    color: yellow;
+    left: 11px;
+    padding: 3px 10px;
+    position: relative;
+    top: 0px;
+}
+
+.club {
+    background: #49631b;
+    color: yellow;
+    padding: 1px 7px;
+    position: relative;
+    top: 0px;
+    left: 32px;
+border-radius: 0 5px 5px 0;}
+.camera {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 211px;
+    top: 243px;
+}
+
+.pics {
+    margin-top: -40px;
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    transition: 0.2s;
+user-select: none;}
+
+	legend {
+    width: 100%;
+    position: relative;
+    top: -12px;
+    left: 5px;
+    max-width: 100%;
+    padding: 0;
+    color: #6f7272;
+    font-weight: 800!important;
+    margin-bottom: 0.5rem;
+    font-size: 21px!important;
+}
+label {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.contact form label {
+    display: block;
+    margin-top: -13px;
+}
+
+.flx1 {
+    position: relative;
+    left: -1px;
+}
+
+.flx2 {
+    position: relative;
+    left: -1px;
+}
+
+.flx3 {
+    position: relative;
+    left: -1px;
+}
+
+.flx4 {
+    position: relative;
+    left: -1px;
+}
+
+.flx5 {
+    position: relative;
+    left: -1px;
+}
+
+
 	}
