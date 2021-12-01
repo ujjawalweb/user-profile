@@ -1027,6 +1027,7 @@ position: relative;
     width: 326px;height:305px;border-radius:0!important;}
 	
 	body,html{overflow-x:hidden;}
+	.cont{margin-top: -20px;}
 	
 	.contact{width: 326px;
    height: 408px;
