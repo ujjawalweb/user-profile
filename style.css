@@ -1023,11 +1023,15 @@ position: relative;
 }
 
 @media only screen and (max-width: 600px) {
+	
+	
+
 .company-info {
     width: 326px;height:305px;border-radius:0!important;}
 	
 	body,html{overflow-x:hidden;}
-	.cont{margin-top: -20px;}
+	
+.cont{margin-top: -20px;}
 	
 	.contact{width: 326px;
    height: 408px;
@@ -1049,7 +1053,7 @@ position: relative;
     font-size:13px;color:#000!important;
 }
 
-input[type=date]{font-size:13px!important;}
+
 
 #end-editing:before {
     content: "";
@@ -1114,7 +1118,7 @@ border-radius: 5px;}
 
 }
 
-#mail{margin-left:41px;width: 194px !important;}
+#mail{margin-left:41px;width: 184px !important;}
 
 .club img{    width: 18px;}
 
@@ -1165,7 +1169,7 @@ border-radius: 5px;}
 
 #bts {
     position: relative;
-    top: -55px;
+    top: -54px;
     line-height: 7px;
     color: #000;
     width: 80px;
