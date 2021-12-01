@@ -538,7 +538,7 @@ font-weight: 600;
 }
 .contact{width:100%;height:393px;}
 .company-info{width:100%;height:393px;position:relative;}
-  body,html{overflow-x:hidden!important;}
+  body,html{overflow-x:hidden!important;scroll-behavior: smooth!important;}
 	  .bg-dark{margin-top: -30px;height:35px;}
 	  .cont{padding:15px 0 !important;}
 	  
@@ -571,7 +571,7 @@ font-weight: 600;
   left: -23px!important;}
   
   #mail{position: relative!important;
-  left: -23px!important;}
+  left: -23px!important;width: 163px !important;}
 
 .flx6 {
     position: relative;
@@ -756,7 +756,7 @@ top: -156px;
        position: relative;
     top: -74px;
     width: 19px;
-    left: 225px;
+    left: 249px;
 
 }
 	
@@ -872,9 +872,10 @@ top: -156px;
 	
 	.tick {
       position: relative;
-    top: -75px;
+    top: -73px;
     width: 16px;
-    left: 168px;
+    left: 210px;
+
 
 }
   
@@ -935,7 +936,7 @@ top: -156px;
 
 #bts {
     top: -74px !important;
-    left: 54px;
+    left: 67px;
     line-height: 2px;
     color: #000;
     /* width: 7px!important; */
@@ -955,7 +956,7 @@ top: -156px;
 	#for {
 
     position: relative;
-left: 49px;
+left: 62px;
     top: -94px!important;
 
     margin-left: 165px;
@@ -971,7 +972,7 @@ left: 49px;
     height: 38px;
     line-height: 4px;
     font-size: 10px!important;
-    left: 169px;
+    left: 181px;
     height: 21px!important;
     top: -119px !important;
 
@@ -981,7 +982,7 @@ left: 49px;
 position: relative;
     top: -73px;
     width: 16px;
-    left: 214px;
+    left: 244px;
 }
 	
 	.camera {
