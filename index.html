@@ -1,239 +1,1453 @@
 
 
-<!DOCTYPE html>
-<html>
-<head>
-   <meta charset="UTF-8">
-    
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 /">
+
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
+
+/* ------------- */
+/* GLOBAL STYLES */
+/* ------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+#end-editing:before{content:"";position:absolute;left:-100px;bottom:
+0px;width:90px;height:1px;background:#000;color:red;}
+
+#my-btn{display:none;}
+#my-btn2{display:none;}
+#my-btn3{display:none;}
+
+.editable {
+  border-color: #bd0f18;
+  box-shadow: inset 0 0 10px #555;
+  background: #f2f2f2;
+}
+
+
+
+#end-editing{display:none;position:relative;}
+
+.text {
+  outline: none;
+}
+
+.edit, .save {
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 4px 10px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.edit { 
+  background: #557a11;
+  color: #f0f0f0;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.save {
+  display: none;
+  background: #bd0f18;
+  color: #f0f0f0;
+}
+
+.box:hover .edit {
+  opacity: 1;
+}
+#end-editing{   
   
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-    <link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
+    padding: 3px 7px;
 
-    <title>KYC Form</title>
-<style>
-
-
-
-</style>
-
-</head>
-
-
-
-
-
-
-<div class="main" style="border-radius:30px;">
-<div class="container cont">
-<div class="row">
-  <div class="col-md-12 bg-dark kyc">
-		  <h3 class="text-center heading text-white p-1">My Profile</h3>
-		  </div>
-
-	<div class="wrapper">
-
-		<!-- COMPANY INFORMATION -->
-		<div class="company-info">
-	<span class="box">Club<span class="club"><img src="images/01-12.png" width="25"></span></span>
-  <span class="box2">VIP Points<span class="point">68</span></span>
-      <h4 id="edit" style="text-align:center;font-weight:600;color:#000;margin-top:39px;">Faizan Ali <img src="images/01-08.png" id="edit-button" width="20"> <button type="submit" id="end-editing">Save</button></h4>
-      <div class="links">
-	
-<img src="images/pics.png" class="pics"><img src="images/52.png" class="camera">
-'
-
-      </div>
-	  <div class="main-btn">
-<div class="upload-btn-wrapper">
-  <button class="btns" id="my-btn"><img src="images/01-10.png" width="20"> &nbsp; Gallery</button>
-  <input type="file" name="myfile" />
-</div>&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-<div class="upload-btn-wrapper">
-  <button class="btns" id="my-btn2"><img src="images/01-11.png" width="25"> &nbsp; Avatar</button>
-  <input type="file" name="myfile" />
-</div>
-
-</div>
-
- <div class="last-btn">
-<button class="bt" id="my-btn3">Save</button>
-</div>
-		</div>
-		<!-- End .company-info -->
-
-		<!-- CONTACT FORM -->
-		<div class="contact">
-			
-
-<form class="form-horizontal">
-            <fieldset>
-
-            <!-- Form Name -->
-            <legend>Personal Details</legend>
-            <!-- Select Basic -->
-      
-             
-          
-           
-
-
-            <!-- Text input-->
-            <div class="form-group">
-             
-              <div class="col-md-12">
-			  <div class="flx1">
-			   <label>Full Name</label> 
-                <input   type="text" placeholder="" class="form-control" id="fname">
-            </div>
-
-
-    
-              <div class="flx2">
-			   <label>City</label> 
-                <input   type="text" placeholder="" class="form-control">
-             </div>
-			   
-          <div class="flx3">
-			  <label>State</label>  
-                <input id="textinput"  type="text" placeholder="" class="form-control">
-              </div>
-			  
-			    
-			 <div class="flx4">
-				<label>Date Of Birth</label>
-  	<input id="textinput"  type="date" placeholder="" class="form-control">
-</div>
-  
- <div class="flx5">
-			   <label>Language</label>
-                <select id="selectbasic" class="form-control">
-                  <option value="1">Hindi</option>
-                  <option value="2">English</option>
-              </div>
-                </select>
-				
-				<button class="bt"  id="update">Update</button>
-              </div>
-			  </div>
-<!-- Multiple Radios (inline) -->
-
-
-
-</fieldset>
-</form>
-
-
-
-<form class="form-horizontal">
-            <fieldset>
-
-            <!-- Form Name -->
-            <legend class="contact-detail">Contact Details</legend>
-            <!-- Select Basic -->
-      
-             
-          
-           
-
-
-            <!-- Text input-->
-            <div class="form-group">
-             
-              <div class="col-md-12">
-			  <div class="flx6">
-			   <label>Mobile</label> 
-                <input type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button>
-            </div>
-			
-		<div class="flx7">
-			   <label>Email</label> 
-                <input   type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail">&nbsp; <img src="images/01-09.png" class="tick">
-             </div>
-
-			<!-- End #contact-form -->
-		</div>
-		<!-- End .contact -->
-
-	</div>
-	
-	</fieldset>
-	</form>
-	
-	<!-- End .wrapper -->
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<!-- End .container -->
-
-<script>
-$('.bt').click(function () {
-    //Code goes here
-    return false;
-});
-</script>
    
-<script>
-const paragraph = document.getElementById("edit");
-const edit_button = document.getElementById("edit-button");
-const end_button = document.getElementById("end-editing");
+    background: #45dd62;
+ 
+  
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+   
+	box-shadow: 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 6px 6px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%);
 
-edit_button.addEventListener("click", function() {
-  paragraph.contentEditable = true;
-  paragraph.style.backgroundColor = "#dddbdb";
-} );
+}
+#edit{background:transparent!important;}
+#edit:focus{border:none;outline:none;}
+.tick{position: relative;
+    top: -76px;
+    width: 23px;
+    left: 429px;}
+	
+input:focus, textarea:focus, select:focus{
+        outline: none!important;box-shadow:none !important;
+    }
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
-end_button.addEventListener("click", function() {
-  paragraph.contentEditable = false;
-  paragraph.style.backgroundColor = "#ffe44d";
-} )
+#update{width: 141px;
+    font-size: 20px;
+    line-height: 3px;
+    color: #000;
+    margin-left: 213px;
+	margin-top:20px;
+}
 
-</script>
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+::placeholder{color:#9e9e9e!important;font-weight:600;}
 
-<script>
-$(document).ready(function(){
-  $("#edit-button").click(function(){
-    $("#edit-button").hide();
-  });
+.bg-dark {
+    background-color: #343a40!important;
+    border-radius: 20px 20px 0 0!important;}
 
-});
-</script>
+.heading{    font-weight: 800;
+    font-size: 38px;    position: relative;
+    top: 5px;
 
-<script>
-$(document).ready(function(){
-  $("#edit-button").click(function(){
-    $("#end-editing").show();
-  });
+}
+label{    white-space: nowrap;
+    font-size: 21px;
+    font-weight: 600;color:#000;}
+	
+	legend{width: 100%;
+    position: relative;
+    top:-30px;
+	left:29px;
+    max-width: 100%;
+    padding: 0;
+    color: #6f7272;
+	font-weight:800!important;
+    margin-bottom: 0.5rem;
+    font-size: 30px!important;}
+	
+	    #for{position: relative;
+    top: -117px;
+    left: 268px;
+	margin-left:165px;
+	width:43%!important;}
+	
+	#bts{position: relative;
+    top: -80.5px;
+	    line-height: 16px;
+    color: #000;
+    width: 80px;
+    height: 37px;
+    left: 179px;
+	box-shadow:none;
+    font-size: 12px;}
+	
+	#bts2{top: -154px;
+    line-height: 16px;
+    color: #000;
+	box-shadow:none;
+    width: 54px;
+    height: 36px;
+	line-height: 12px;
+    left: 358px;}
+	
+	
+	.flx1{position: relative;
+    left: 75px;
+}
+	.flx2{ margin-top: -29px;position: relative;
+    left: 75px;
+}
+		.flx3{ margin-top: -29px;position: relative;
+    left: 75px;
+}
+			.flx4{ margin-top: -29px;position: relative;
+    left: 75px;
+}
+			.flx5{ margin-top: -29px;position: relative;
+    left: 75px;
+}
 
-});
-</script>
+			.flx6{ margin-top: -29px;position: relative;
+    left: 75px;
+}
 
 
-<script>
-$(document).ready(function(){
-  $(".camera").click(function(){
-    $("#my-btn,#my-btn2,#my-btn3").css("display", "block");
-  });
-});
-</script>
+			.flx7{ margin-top: -139px;position: relative;
+    left: 75px;
+}
 
-<script>
-$(document).ready(function(){
-  $(".camera").click(function(){
-    $(".camera").css("display", "none");
-  });
-});
-</script>
+.form-control{border:1px solid #000!important;width:86%!important;}
+
+body {
+  background: grey;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: 'Yantramanav', sans-serif;
+  padding: 1em;
+}
+h4{text-align-center;}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+#selectbasic{margin-left: 151px;
+    top: -43px;
+    position: relative;}
+	
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {width:417px;height: 623px;
+  background: #9ebbcc;
+  border-radius: 0px 0px 0px 20px!important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {width:749px;height: 623px;
+  background: #fff;border-radius: 0px 0px 20px 0!important;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;margin-top: -29px;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {    position: relative;
+    margin-left: 151px;
+    top: -43px;
+
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #000;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627EDC;
+  border: 0;
+  color: #e4e4e4;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
 
 
 
-</body>
-</html>
+
+.club{   background: #49631b;
+    color: yellow;
+    padding: 5px 7px;
+    position: relative;
+    top: 0px;
+    left: 32px;
+    border-radius: 0 5px 5px 0;}
+	
+	.point { border-radius: 0 5px 5px 0;
+    background: #49631b;
+    color: yellow;left:11px;
+    padding: 6px 10px;
+    position: relative;
+    top: 0px;
+}
+
+.box {    border: 2px solid #708591;
+width: 171px;
+font-weight: 600;
+    white-space: nowrap;
+    height: 33px;font-size:20px;color:#49631b;
+    position: relative;
+    top: -18px;
+    left: -24px;
+    /* margin-top: -32px !important; */
+    padding: 4px 15px;
+    border-radius: 5px;
+    background: #b9ed70;
+}
+.box2 {    border: 2px solid #708591;
+    width: 110px;font-size:20px;color:#49631b;
+    white-space: nowrap;
+	font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 4px 10px;
+     left: 117px;
+    top: -20px;
+    border-radius: 5px;
+    background: #b9ed70;}
+
+.bt{    background: linear-gradient(to bottom,#fad961,#d8af1a) !important;
+    width: 132px;
+  box-shadow: 
+    0 2px 2px rgba(0,0,0,0.1),
+    0 4px 4px rgba(0,0,0,0.1),
+    0 6px 6px rgba(0,0,0,0.1),
+    0 8px 8px rgba(0,0,0,0.1);
+    height: 38px;
+    color: #000;
+    border: none;
+	font-weight: 600;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+
+.last-btn{    display: flex;
+    margin-top: 26px;
+    justify-content: center;}
+
+.main-btn{display: flex;
+    justify-content: center;margin-top:20px;
+}
+
+.btns{width: 114px;font-weight:600;
+    height: 37px;
+    white-space: nowrap;
+    font-size: 19px;
+    /* padding: 12px 24px; */
+    border: 1px solid #415057;
+    border-radius: 5px;
+    }
+	
+	.pics {margin-top:-40px;
+  width: 170px;
+  height: 170px;
+ border-radius:50%;
+  transition: 0.2s;
+  user-select: none;
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.camera{    width: 38px;
+    height: 38px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;  position:absolute;  left: 410px;
+    top: 271px;
+
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 875px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	  #end-editing:before {
+    content: "";
+    position: absolute;
+    left: -73px;
+    bottom: 0px;
+    width: 68px;
+    height: 1px;
+    background: #000;
+	  color: red;}
+	  
+	  input[type="text"]
+{
+    font-size:13px;color:#000!important;
+}
+	  	  input[type="number"]
+{
+    font-size:13px;color:#000!important;
+}
+		  	  input[type="email"]
+{
+    font-size:13px;color:#000!important;
+}
+	
+	  
+	  input[type=date]{font-size:10px!important;}
+	  
+	  .main-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+	  ::placeholder{font-size:10px!important;}
+	  .bt {
+    background: linear-gradient(to bottom,#fad961,#d8af1a) !important;
+    width: 102px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 6px 6px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%);
+    height: 28px;
+    color: #000;
+    border: none;
+    line-height: 29px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 19px;
+	  margin-top: -7px;}
+	  
+	  .box {
+    border: 2px solid #708591;
+    width: 140px;
+    font-weight: 600;
+    white-space: nowrap;
+    height: 33px;
+    font-size: 17px;
+    color: #49631b;
+    position: relative;
+    top: -26px;
+    left: -24px;
+    /* margin-top: -32px !important; */
+    padding: 1px 11px;
+    border-radius: 5px;
+	  background: #b9ed70;}
+	  
+	  .club {
+    background: #49631b;
+    color: yellow;
+    padding: 2px 6px;
+    position: relative;
+    top: 0px;
+    left: 32px;
+    border-radius: 0 5px 5px 0;
+}
+
+.point {
+    border-radius: 0 5px 5px 0;
+    background: #49631b;
+    color: yellow;
+    left: 11px;
+    padding: 3px 10px;
+    position: relative;
+    top: 0px;
+}
+.box2 {    font-size: 17px!important;
+    position: relative;
+    padding: 1px 11px!important;
+    left: 41px!important;
+    top: -28px!important;
+}
+.contact{width:100%;height:393px;}
+.company-info{width:100%;height:393px;position:relative;}
+  body,html{overflow-x:hidden!important;scroll-behavior: smooth!important;}
+	  .bg-dark{margin-top: -30px;height:35px;}
+	  .cont{padding:15px 0 !important;}
+	  
+	  .contact-detail{      position: relative;
+    top: -24px;
+    margin-bottom: 35px !important;
+}
+
+
+
+
+#edit-button{width:12px;}
+	
+	
+.btns {
+ width: 88px;
+    font-weight: 600;
+    height: 27px;
+    margin-top: 0px;
+    font-size: 15px;}
+
+#edit{margin-top: 9px!important;
+    font-size: 17px;
+}
+
+#edit{    margin-top: 35px!important;}
+.pics{width:96px;height:96px;margin-top: -51px;}
+
+#mob{position: relative!important;
+  left: -23px!important;}
+  
+  #mail{position: relative!important;
+  left: -23px!important;width: 163px !important;}
+
+.flx6 {
+    position: relative;
+    left: -2px;
+top: -32px;}
+
+  .camera {
+        width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 186px;
+    top: 141px;}
+	
+	.wrapper{display:flex;}
+	
+	legend{    font-size: 19px!important;margin-bottom: 25px!important;
+    margin-left: -37px;white-space:nowrap;}
+	
+	label{font-size:16px!important;}
+	
+	    .flx1{position: relative;
+    left: -2px;
+}
+  	    .flx2{position: relative;
+    left: -2px;    top: 9px;
+
+}
+	    .flx3{position: relative;
+    left: -2px;top: 18px;
+}
+	    .flx4{position: relative;
+    left: -2px;top: 27px;
+}
+	    .flx5{position: relative;
+    left: -2px;top: 35px;
+}
+	    .flx6{position: relative;
+    left: -2px;top:-2px;
+}
+
+	    .flx7{position: relative;
+    left: -2px;top: 53px;
+}
+
+
+    #update {
+    width: 141px;
+    font-size: 20px;
+    line-height: 3px;
+    color: #000;
+    margin-left: 125px;
+    margin-top: 19px;
+    line-height: 16px!important;
+      height: 29px!important;
+    width: 92px!important;
+    line-height: 18px !important;
+    font-size: 14px !important;
+    position: relative !important;
+    top: -55px !important;
+
+}
+
+.contact form button, .contact form input, .contact form textarea {
+position: relative!important;
+    height: 20px !important;
+    padding: 7px;
+    left: 17px;
+    top: -49px!important;
+    margin-left: 135px;
+}
+	
+	#selectbasic {
+    margin-left: 135px;
+    top: -49px;    height: 20px !important;
+    padding: 7px;
+    position: relative;
+}
+	.heading {
+    font-weight: 800;
+    font-size: 24px;
+	position: relative;
+    top: 0px;
+	}
+	
+	.contact form label {
+    font-size: 12px;
+    /* margin-top: -21px !important; */
+    position: relative;
+    top: -18px;
+
+    display: block;
+    margin-top: -29px;
+    margin-left: -14px;
+}
+
+#for{width:53%!important;}
+
+	
+  }
+  
+  
+  
+  @media only screen 
+  and (min-device-width: 700px) 
+  and (max-device-width: 751px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  
+.contact {
+    width: 423px;}
+	
+	.company-info {
+    width: 306px!important;
+  }
+  .contact form button, .contact form input, .contact form textarea {
+    position: relative;
+    margin-left: 100px;
+    /* height: 24px; */
+    width: 135px!important;}
+	
+	.box2{    position: relative;
+    padding: 4px 10px;
+    left: 123px;
+    top: -52px;}
+	
+	#selectbasic {
+    margin-left: 115px;
+    top: -48px;
+    width: 137px!important;
+    width: 100px;
+    position: relative;}
+	
+	.flx7 {
+    position: relative;
+    left: -2px;
+    top: 50px;
+}
+	
+	#bts {
+    position: relative;
+    top: -80.5px;
+    line-height: 16px;
+    color: #000;
+    height: 20px!important;
+    width: 52px!important;
+    height: 37px;
+    left: 62px;
+    top: -72px !important;
+    box-shadow: none;
+    white-space: nowrap !important;
+    font-size: 11px;
+    line-height: 8px;
+
+}
+	
+	#for {
+ left: 250px;
+    position: relative!important;
+    top: -94px !important;
+    margin-left: -23px;
+    width: 53%!important;}
+	
+	#bts2 {
+top: -156px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 37px!important;
+    line-height: 4px;
+    left: 189px;
+    font-size: 10px;
+    height: 21px !important;
+    
+    top: -119px !important;
+
+}
+
+.tick {
+       position: relative;
+    top: -74px;
+    width: 19px;
+    left: 249px;
+
+}
+	
+
+	
+	}
+  
+  
+    @media only screen 
+  and (min-device-width: 630px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  label{font-size:16px!important;}
+  
+  .camera {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+  left: 194px;
+    top: 125px;
+
+}
+
+.bt{    margin-top: -6px;}
+  
+  .contact form button, .contact form input, .contact form textarea {
+    position: relative;
+    margin-left: 65px;
+    position: relative;
+    top: -35px;
+    height: 15px;    width: 117px !important;
+}
+#selectbasic {
+    margin-left: 83px;
+    width: 117px !important;
+    position: relative;
+    height: 36px;}
+	
+	.flx7 {
+    position: relative;
+    left: -2px;
+    top: 50px;
+}
+
+.box2{
+    padding: 4px 10px;
+   }
+	.box{    position: relative!important;
+    top: -13px!important;
+    left: -14px!important;}
+	
+.box2 {
+    position: relative!important;
+    padding: 4px 10px;
+    left: 70px!important;
+    top: -13px!important;
+    }
+	legend{    margin-bottom: 20px !important;}
+	
+#bts {
+    position: relative;
+    top: -68.5px;
+    line-height: 8px;
+    color: #000;
+    width: 80px;
+    width: 48px !important;
+    height: 33px;
+    white-space: nowrap;
+    left: 50px;
+    height: 21px!important;
+    top: -74px !important;
+    box-shadow: none;
+    font-size: 8px;
+}	
+	legend {
+    width: 100%;margin-bottom: 36px !important;
+    position: relative;
+    top: -16px;}
+	
+	#update {
+    width: 141px;
+    font-size: 20px;
+    line-height: 3px;
+    color: #000;
+    margin-left: 80px;}
+	
+	#for {
+    position: relative;
+       top: -95px !important;
+    left: 22px;
+    margin-left: 153px;
+  
+    width: 53%!important;
+}
+
+#bts2 {
+    top: -137px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 39px !important;
+    height: 36px;
+    font-size: 10px;
+    line-height: 2px;
+    left: 156px;
+    height: 21px!important;
+    top: -119px !important;
+}
+	
+	.tick {
+      position: relative;
+    top: -73px;
+    width: 16px;
+    left: 210px;
+
+
+}
+  
+  }
+  
+  
+  
+    @media only screen 
+  and (min-device-width: 736px) 
+  and (max-device-width: 876px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 20px;
+    color: #49631b;
+	    position: relative !important;
+    left: 40px !important;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 4px 10px;
+    left: 68px;
+    top: -20px;}
+	
+	
+	.contact form button, .contact form input, .contact form textarea {
+    position: relative;
+    margin-left: 108px;}
+	
+	#selectbasic {
+    margin-left: 108px;
+    top: -43px;
+    position: relative;
+}
+  .contact form button, .contact form input, .contact form textarea {
+    position: relative;
+    margin-left: 96px;
+    width: 134px !important;
+}
+  #selectbasic {
+       margin-left: 112px;
+    top: -50px;
+    width: 136px!important;
+    position: relative;}
+	
+	#update {
+    width: 141px;
+    font-size: 20px;
+    line-height: 3px;
+    color: #000;
+    margin-left: 121px;
+    margin-top: 20px;}
+	
+
+#bts {
+    top: -74px !important;
+    left: 67px;
+    line-height: 2px;
+    color: #000;
+    /* width: 7px!important; */
+    font-size: 10px !important;
+    width: 80px!important;
+    height: 21px !important;
+    width: 58px!important;
+
+}
+	
+	#mob{position: relative;
+    left: -29px;}
+	
+	#mail{position: relative;
+    left: -29px;}
+	
+	#for {
+
+    position: relative;
+left: 62px;
+    top: -94px!important;
+
+    margin-left: 165px;
+    width: 53%!important;}
+	
+	#bts2 {
+        top: -155px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 54px;
+    width: 40px!important;
+    height: 38px;
+    line-height: 4px;
+    font-size: 10px!important;
+    left: 181px;
+    height: 21px!important;
+    top: -119px !important;
+
+}
+	
+	.tick {
+position: relative;
+    top: -73px;
+    width: 16px;
+    left: 244px;
+}
+	
+	.camera {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+       left: 184px;
+    top: 141px;
+
+}
+	
+	
+  
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+.company-info {
+    width: 326px;height:305px;border-radius:0!important;}
+	
+	.contact{width: 326px;
+   height: 334px;
+    border-radius: 0 0 10px 10px !important;
+}
+
+input[type=date]{font-size:10px!important;}
+
+#end-editing:before {
+    content: "";
+    position: absolute;
+    left: -68px;
+    bottom: 0px;
+    width: 62px;
+    height: 1px;
+    background: #000;
+color: red;}
+
+
+.main-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.btns {
+    width: 89px;
+    font-weight: 600;
+    height: 29px;
+    white-space: nowrap;
+    font-size: 14px;
+    /* padding: 12px 24px; */
+    border: 1px solid #415057;
+border-radius: 5px;}
+.bt {
+    background: linear-gradient(to bottom,#fad961,#d8af1a) !important;
+    width: 132px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 6px 6px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%);
+    height: 26px;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: -15px;
+    font-size: 15px;
+    width: 83px!important;
+}
+.tick {
+    position: relative;
+    top: -52px;
+    width: 14px;
+    left: 200px;
+}
+#mob{    margin-left: 60px;}
+
+#for {
+    position: relative;
+    top: -74px;
+    left: 45px;
+    margin-left: 165px;
+    width: 43%!important;
+}
+
+.flx7 {
+  margin-top: -139px;
+    position: relative;
+    left: 2px;
+    top: 70px;
+
+}
+
+#mail{margin-left: 60px;}
+
+.club img{    width: 18px;}
+
+#bts2 {
+    top: -98px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 54px;
+    height: 20px;
+    line-height: 3px;
+    left: 195px;
+    font-size: 9px;
+    width: 37px!important;
+}
+#edit{font-size: 16px;margin-top:20px!important;}
+#edit-button{width:16px;}
+
+.contact form button, .contact form input, .contact form textarea {
+    position: relative;
+    margin-left: 81px;
+    top: -30px;
+    width: 100%;
+    width: 132px !important;
+    height: 20px;
+    padding: 8px !important;
+    padding: 1em;
+    border: solid 1px #000;
+    border-radius: 4px;
+}
+
+#selectbasic {
+    margin-left: 82px;
+    top: -27px;
+    position: relative;
+    width: 132px!important;
+    height: 20px;
+    padding: 8px!important;
+}
+.flx6 {
+    margin-top: -29px;
+    position: relative;
+    left: 0px;
+    top: 16px;
+}
+
+#bts {
+    position: relative;
+    top: -54px;
+    line-height: 7px;
+    color: #000;
+    width: 80px;
+    height: 21px;
+    white-space: nowrap !important;
+    left: 75px;
+    width: 47px !important;
+    box-shadow: none;
+    font-size: 8px;
+}
+
+#update {
+    width: 110px;
+    font-size: 16px;
+    line-height: 3px;
+    height: 25px !important;
+    color: #000;
+    margin-left: 100px;
+    width: 91px!important;
+    margin-top: 20px;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 26px;
+    position: relative;
+top: 5px;}
+.box {
+    border: 2px solid #708591;
+    width: 144px;
+    font-weight: 600;
+    white-space: nowrap;
+    height: 33px;
+    font-size: 15px;
+    color: #49631b;
+    position: relative;
+    top: -13px;
+    left: -10px;
+    /* margin-top: -32px !important; */
+    padding: 0px 11px;
+    border-radius: 5px;
+background: #b9ed70;}
+
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 15px;
+    color: #49631b;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 2px 7px;
+    left: 79px;
+    top: -12px;
+    border-radius: 5px;
+background: #b9ed70;}
+
+.point {
+    border-radius: 0 5px 5px 0;
+    background: #49631b;
+    color: yellow;
+    left: 11px;
+    padding: 3px 10px;
+    position: relative;
+    top: 0px;
+}
+
+.club {
+    background: #49631b;
+    color: yellow;
+    padding: 1px 7px;
+    position: relative;
+    top: 0px;
+    left: 32px;
+border-radius: 0 5px 5px 0;}
+.camera {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+      left: 208px;
+    top: 194px;
+}
+
+.pics {
+    margin-top: -40px;
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    transition: 0.2s;
+user-select: none;}
+
+	legend {
+    width: 100%;
+    position: relative;
+    top: -12px;
+    left: 5px;
+    max-width: 100%;
+    padding: 0;
+    color: #6f7272;
+    font-weight: 800!important;
+    margin-bottom: 0.5rem;
+    font-size: 16px!important;
+}
+label {
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+}
+.contact form label {
+    display: block;
+    margin-top: -13px;
+}
+
+.flx1 {
+    position: relative;
+    left: -1px;
+}
+
+.flx2 {
+    position: relative;
+    left: -1px;top:5px;
+}
+
+.flx3 {
+    position: relative;
+    left: -1px;top:5px;
+}
+
+.flx4 {
+    position: relative;
+    left: -1px;top:10px;
+}
+
+.flx5 {
+    position: relative;
+    left: -1px;top:11px;
+}
+
+
+	}
+	
+	
+	@media only screen and (max-width: 416px) and (min-width: 400px) {
+.company-info {
+    width: 375px!important;
+ 
+    border-radius: 0!important;
+}
+
+.camera {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 231px;
+    top: 197px;
+}
+.contact{width: 375px!important;}
+
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 15px;
+    color: #49631b;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 2px 7px;
+left: 147px;}
+
+
+}
+
+	@media only screen and (max-width: 380px) and (min-width: 370px) {
+.company-info {
+width: 338px!important;}
+
+.contact {
+width: 338px!important;}
+
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 15px;
+    color: #49631b;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 2px 7px;
+    left: 103px;
+    top: -12px;
+    border-radius: 5px;
+background: #b9ed70;}
+
+
+
+	}
+	
+		@media only screen and (max-width: 400px) and (min-width: 390px) {
+	.company-info {
+    width: 358px;
+  
+    border-radius: 0!important;
+}
+
+	.contact {
+    width: 358px;}
+	
+	.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 15px;
+    color: #49631b;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 33px;
+    padding: 5px 58x;
+    position: relative;
+    padding: 2px 7px;
+    left: 120px;}
+	
+	.camera {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 221px;
+    top: 194px;}
+	
+	
+		}
+		
+		@media only screen and (min-device-width: 820px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 20px;
+    color: #49631b;
+    position: relative !important;
+left: 137px !important;}
+
+.camera {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 179px;
+    top: 140px;
+}
+		}
+		
+				@media only screen and (min-device-width: 800px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+		.box2 {
+    border: 2px solid #708591;
+    width: 140px;
+    font-size: 20px;
+    color: #49631b;
+    position: relative !important;
+		left: 105px !important;}
+		
+		.camera {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 232px;
+		top: 141px;}
+		
+				}
+				
+				
+				@media only screen and (min-device-width: 752px) and (max-device-width: 799px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 20px;
+    color: #49631b;
+    position: relative !important;
+left: 82px !important;}
+.camera {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    left: 219px;
+    top: 141px;
+}
+
+
+
+}
+
+				
+				@media only screen and (min-device-width: 813px) and (max-device-width: 873px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+.box2 {
+    border: 2px solid #708591;
+    width: 110px;
+    font-size: 20px;
+    color: #49631b;
+    position: relative !important;
+left: 136px !important;}
+
+.camera{    margin-left: 56px;}
+
+				}
