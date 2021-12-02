@@ -1024,6 +1024,11 @@ position: relative;
 
 @media only screen and (max-width: 600px) {
 	
+  input[type="date"]{
+          align-items:center!important;
+justify-content:center!important;
+      
+    }
 	
 
 .company-info {
