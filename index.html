@@ -120,6 +120,7 @@
                 </select>
 				
 				<button class="bt"  id="update">Update</button>
+				<button class="bt" id="updated">Updated &nbsp; <img src="images/01-09.png" width="18"></button>
               </div>
 			  </div>
 <!-- Multiple Radios (inline) -->
@@ -149,12 +150,12 @@
               <div class="col-md-12">
 			  <div class="flx6">
 			   <label>Mobile</label> 
-                <input type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><span class="veri"><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button></span>
+                <input type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><span class="veri"><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button> <img src="images/01-09.png" class="ticks" width="18"></span>
             </div>
 			
 		<div class="flx7">
 			   <label>Email</label> 
-                <input   type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail"> <button class="bt" id="bts3">Verify</button>&nbsp; <img src="images/01-09.png" class="tick">
+                <input   type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail"> <button class="bt" id="bts4">Send OTP</button><span class="veri2"><input type="number" placeholder="566213" class="form-control" id="for2"><button class="bt" id="bts5">Verify</button><img src="images/01-09.png" class="ticks2" width="18"></span>
 				               
              </div>
 
@@ -270,8 +271,35 @@ $(document).ready(function(){
 
 <script>
 $(document).ready(function(){
+  $("#bts4").click(function(){
+    $(".veri2").show();
+  });
+ 
+});
+</script>
+
+<script>
+$(document).ready(function(){
   $("#bts").click(function(){
-   $(".flx7").css("margin-top", "-112px");
+   $(".flx7").css("margin-top", "-106px");
+  });
+ 
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#bts").click(function(){
+   $(".flx7").css("margin-top", "-116px");
+  });
+ 
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#bts2").click(function(){
+   $(".flx7").css("margin-top", "-41px");
   });
  
 });
@@ -282,7 +310,34 @@ if (window.matchMedia('(max-width: 600px)').matches)
 {
  $(document).ready(function(){
   $("#bts").click(function(){
-   $(".flx7").css("margin-top", "-147px");
+   $(".flx7").css("margin-top", "-139px");
+  });
+ 
+});
+}
+
+</script>
+
+
+<script>
+if (window.matchMedia('(max-width: 600px)').matches)
+{
+ $(document).ready(function(){
+  $("#bts2").click(function(){
+   $(".flx7").css("margin-top", "-117px");
+  });
+ 
+});
+}
+
+</script>
+
+<script>
+if (window.matchMedia('(min-width: 750px)').matches)
+{
+ $(document).ready(function(){
+  $("#bts2").click(function(){
+   $(".flx7").css("margin-top", "-60px");
   });
  
 });
@@ -303,12 +358,53 @@ $(document).ready(function(){
 
 <script>
 $(document).ready(function(){
-  $("#bts3").click(function(){
-   $(".tick").css("display", "block");
+  $("#update").click(function(){
+    $(this).hide();
+	 $("#updated").show();
+  });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#bts2").click(function(){
+   $(".ticks").css("display", "block");
   });
  
 });
 </script>
+
+<script>
+$(document).ready(function(){
+  $("#bts5").click(function(){
+   $(".ticks2").css("display", "block");
+  });
+ 
+});
+</script>
+
+
+
+
+<script>
+$(document).ready(function(){
+  $("#bts2").click(function(){
+   $("#bts2,#for,#bts").css("display", "none");
+  });
+ 
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#bts5").click(function(){
+   $("#bts5,#for2,#bts4").css("display", "none");
+  });
+ 
+});
+</script>
+
+
 
 </body>
 </html>
