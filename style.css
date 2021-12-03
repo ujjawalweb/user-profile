@@ -453,7 +453,7 @@ font-weight: 600;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 	  
-	  .form-control{font-size:10px!important;}
+	
 	  
 	  #end-editing:before {
     content: "";
@@ -1034,7 +1034,7 @@ position: relative;
 
 @media only screen and (max-width: 600px) {
 	
-.form-control{font-size:10px!important;}
+
 	
 	.datetime-input-box-wrapper {
     display: inline-flex;
@@ -1166,7 +1166,7 @@ top: -43px;
     width: 100%;
     width: 164px !important;
     height: 21px;
-    padding: 8px !important;
+padding: 0 10px !important;
     padding: 1em;
     border: solid 1px #000;
     border-radius: 4px;
