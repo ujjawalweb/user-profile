@@ -454,6 +454,7 @@ font-weight: 600;
   and (orientation: landscape) {
 	  
 	.form-control{font-size:14px!important;}
+		#bts{white-space: nowrap;}
 	  
 	  #end-editing:before {
     content: "";
@@ -732,7 +733,7 @@ position: relative!important;
     width: 52px!important;
     height: 37px;
     left: 62px;
-    top: -72px !important;
+    top: -73px !important;
     box-shadow: none;
     white-space: nowrap !important;
     font-size: 11px;
