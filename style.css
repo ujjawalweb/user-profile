@@ -12,6 +12,8 @@
   box-sizing: border-box;
 }
 
+
+
 #end-editing:before{content:"";position:absolute;left:-100px;bottom:
 0px;width:90px;height:1px;background:#000;color:red;}
 
@@ -493,7 +495,11 @@ font-weight: 600;
     font-weight: 600;
     border-radius: 5px;
     font-size: 19px;
-	  margin-top: -7px;}
+	  margin-top: -7px;
+	      position: relative;
+    top: 14px;
+	  
+	  }
 	  
 	  .box {
     border: 2px solid #708591;
@@ -568,10 +574,11 @@ font-weight: 600;
 .pics{width:96px;height:96px;margin-top: -51px;}
 
 #mob{position: relative!important;
-  left: -23px!important;}
+  left: -37px!important;}
   
   #mail{position: relative!important;
-  left: -23px!important;width: 163px !important;}
+    left: -36px!important;
+    width: 153px !important;}
 
 .flx6 {
     position: relative;
@@ -756,7 +763,7 @@ top: -156px;
        position: relative;
     top: -74px;
     width: 19px;
-    left: 249px;
+    left: 227px;
 
 }
 	
@@ -936,7 +943,7 @@ top: -156px;
 
 #bts {
     top: -74px !important;
-    left: 67px;
+    left: 57px;
     line-height: 2px;
     color: #000;
     /* width: 7px!important; */
@@ -982,7 +989,7 @@ left: 62px;
 position: relative;
     top: -73px;
     width: 16px;
-    left: 244px;
+    left: 218px;
 }
 	
 	.camera {
@@ -1024,12 +1031,15 @@ position: relative;
 
 @media only screen and (max-width: 600px) {
 	
-  input[type="date"]{
-          align-items:center!important;
-justify-content:center!important;
-      
-    }
+
 	
+	.datetime-input-box-wrapper {
+    display: inline-flex;
+    flex: 1;
+    background-color: inherit;
+    min-width: 0;
+    justify-content: space-between;
+align-items: normmal !important;}
 
 .company-info {
     width: 326px;height:305px;border-radius:0!important;}
@@ -1102,15 +1112,15 @@ border-radius: 5px;}
      position: relative;
     top: -55px;
     width: 18px;
-    left: 237px;
+    left: 228px;
 }
 
-#mob{width: 130px!important;margin-left:43px;}
+#mob{width: 184px!important;margin-left:43px;}
 
 #for {
     position: relative;
-    top: -76px;
-    left:23px;
+top: -43px;
+    left: -114px;
     margin-left: 160px;
     width:61%!important;
 }
@@ -1119,16 +1129,17 @@ border-radius: 5px;}
   margin-top: -139px;
     position: relative;
     left: 2px;
-    top: 92px;
+    top: 120px;
 
 }
 
-#mail{margin-left:41px;width: 184px !important;}
+#mail{margin-left:44px;width: 184px !important;}
 
 .club img{    width: 18px;}
 
 
 #bts2 {
+
     top: -102px;
     line-height: 16px;
     color: #000;
@@ -1136,7 +1147,8 @@ border-radius: 5px;}
     width: 54px;
     height: 21px;
     line-height: 3px;
-    left: 158px;
+    left: 27px;
+    top: -68px;
     font-size: 9px;
     width: 37px!important;
 
@@ -1174,13 +1186,13 @@ border-radius: 5px;}
 
 #bts {
     position: relative;
-    top: -53px;
+    top: -54px;
     line-height: 7px;
     color: #000;
     width: 80px;
     height: 21px;
     white-space: nowrap !important;
-    left:33px;
+    left:86px;
     width: 47px !important;
     box-shadow: none;
     font-size: 8px;
