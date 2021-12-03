@@ -12,6 +12,58 @@
   box-sizing: border-box;
 }
 
+.ticks{    display: none;
+    position: relative;
+    left: 443px;
+top: -69px;}
+
+.ticks2 {
+    display: none;
+    position: relative;
+    top: -73px;
+    left: 443px;
+}
+
+#updated {display:none;
+    width: 141px;
+    font-size: 20px;
+    line-height: 3px;
+    color: #000;
+    margin-left: 213px;
+    margin-top: 20px;padding:12px 0;
+}
+
+.veri2{display:none;}
+
+    #for2{position: relative;
+    top: -117px;
+    left: 268px;
+    margin-left: 165px;
+    width: 43%!important;}
+
+#bts4 {
+    position: relative;
+    top: -80.5px;
+    line-height: 16px;
+    color: #000;
+    width: 80px;
+    height: 37px;
+    left: 179px;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+
+#bts5 {
+    top: -154px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 54px;
+    height: 36px;
+    line-height: 12px;
+    left: 358px;
+}
 #bts3{width: 79px;
     position: relative;
     top: -81px;
@@ -464,6 +516,13 @@ font-weight: 600;
 	  
 	  .tick{display:none;}
 	  
+	  .ticks{position: relative;display:none;
+    top: -72px;
+  left: 221px;}
+  	  .ticks2{position: relative;display:none;
+    top: -72px;
+  left: 221px;}
+  
 	  #bts3{position: relative !important;
     top: -74px !important;
     width: 56px !important;
@@ -603,7 +662,7 @@ font-weight: 600;
 .pics{width:96px;height:96px;margin-top: -51px;}
 
 #mob{position: relative!important;
-  left: -47px!important;}
+  left: -47px!important;    width: 154px !important;}
   
   #mail{position: relative!important;
      left: -47px!important;
@@ -652,7 +711,7 @@ top: -32px;}
 }
 
 	    .flx7{position: relative;
-    left: -2px;top: 21px;
+    left: -2px;top: 23px;
 }
 
 
@@ -671,6 +730,21 @@ top: -32px;}
     position: relative !important;
     top: -55px !important;
 
+}
+
+#updated{line-height: 3px;
+    color: #000;
+    margin-left: 125px;
+    margin-top: 19px;
+    line-height: 16px!important;
+    height: 29px!important;
+    width: 92px!important;
+    line-height: 17px !important;
+    font-size: 14px !important;
+    position: relative !important;
+    top: -55px !important;
+    padding: 8px 11px;
+    white-space: nowrap;
 }
 
 .contact form button, .contact form input, .contact form textarea {
@@ -765,6 +839,21 @@ position: relative!important;
     line-height: 8px;
 
 }
+
+#bts4 {
+    position: relative;
+    top: -80.5px;
+    line-height: 16px;
+    color: #000;
+    height: 20px!important;
+    width: 52px!important;
+    height: 37px;
+    left: 62px;
+    top: -73px!important;
+    box-shadow: none;
+    white-space: nowrap !important;
+    font-size: 10px;
+line-height: 8px;}
 	
 	#for {
  left: 250px;
@@ -772,6 +861,14 @@ position: relative!important;
     top: -94px !important;
     margin-left: -23px;
     width: 53%!important;}
+	
+	#for2 {
+    left: 250px;
+    position: relative!important;
+    top: -94px !important;
+    margin-left: -23px;
+    width: 53%!important;
+}
 	
 	#bts2 {
 top: -156px;
@@ -787,6 +884,18 @@ top: -156px;
     top: -119px !important;
 
 }
+
+#bts5 {
+    top: -156px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 37px!important;
+    line-height: 4px;
+    left: 189px;
+    font-size: 10px;
+    height: 21px !important;
+top: -119px !important;}
 
 .tick {
        position: relative;
@@ -871,6 +980,23 @@ top: -156px;
     box-shadow: none;
     font-size: 8px;
 }	
+#bts4 {
+    position: relative;
+    top: -68.5px;
+    line-height: 8px;
+    color: #000;
+    width: 80px;
+    width: 48px !important;
+    height: 33px;
+    white-space: nowrap;
+    left: 58px;
+    height: 21px!important;
+    top: -74px !important;
+    box-shadow: none;
+font-size: 8px;}
+
+
+
 	legend {
     width: 100%;margin-bottom: 36px !important;
     position: relative;
@@ -891,6 +1017,12 @@ top: -156px;
   
     width: 53%!important;
 }
+#for2 {
+    position: relative;
+    top: -95px !important;
+    left: 22px;
+    margin-left: 153px;
+width: 53%!important;}
 
 #bts2 {
     top: -137px;
@@ -905,6 +1037,19 @@ top: -156px;
     height: 21px!important;
     top: -119px !important;
 }
+
+#bts5 {
+    top: -137px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 39px !important;
+    height: 36px;
+    font-size: 10px;
+    line-height: 2px;
+    left: 156px;
+    height: 21px!important;
+top: -119px !important;}
 	
 	.tick {
   position: relative;
@@ -983,6 +1128,19 @@ top: -156px;
 
 }
 	
+	#bts4 {white-space:nowrap;
+    top: -74px !important;
+    left: 57px;
+    line-height: 2px;
+    color: #000;
+    /* width: 7px!important; */
+    font-size: 10px !important;
+    width: 80px!important;
+    height: 21px !important;
+    width: 58px!important;
+}
+	
+	
 	#mob{position: relative;
     left: -29px;}
 	
@@ -997,6 +1155,15 @@ left: 62px;
 
     margin-left: 165px;
     width: 53%!important;}
+	
+	
+	#for2 {
+    position: relative;
+    left: 62px;
+    top: -94px!important;
+    margin-left: 165px;
+    width: 53%!important;
+}
 	
 	#bts2 {
         top: -155px;
@@ -1013,6 +1180,19 @@ left: 62px;
     top: -119px !important;
 
 }
+	#bts5 {
+    top: -155px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 54px;
+    width: 40px!important;
+    height: 38px;
+    line-height: 4px;
+    font-size: 10px!important;
+    left: 181px;
+    height: 21px!important;
+    top: -119px !important;}
 	
 	.tick {
     position: relative;
@@ -1061,6 +1241,19 @@ left: 62px;
 @media only screen and (max-width: 600px) {
 	.form-control{font-size:14px!important;}
 	
+	.ticks2{display: none; position: relative;
+    top: -47px;
+    left: 236px;
+}
+	
+	
+	.ticks{display: none;
+    position: relative;
+    top: -49px;
+    left: 238px;
+}
+
+
 	#bts3{    width: 47px !important;
     margin-left: -3px!important;
     position: relative;
@@ -1171,6 +1364,14 @@ top: -43px;
     width:61%!important;
 }
 
+#for2 {
+    position: relative;
+    top: -43px;
+    left: -116px;
+    margin-left: 160px;
+    width: 61%!important;
+}
+
 .flx7 {
   margin-top: -139px;
     position: relative;
@@ -1199,6 +1400,22 @@ top: -43px;
     width: 37px!important;
 
 }
+
+#bts5 {
+    top: -102px;
+    line-height: 16px;
+    color: #000;
+    box-shadow: none;
+    width: 54px;
+    height: 21px;
+    line-height: 3px;
+    left: 27px;
+    top: -68px;
+    font-size: 9px;
+    width: 37px!important;
+}
+
+
 #edit{font-size: 16px;margin-top:20px!important;}
 #edit-button{width:16px;}
 
@@ -1244,6 +1461,20 @@ padding: 0 10px !important;
     font-size: 8px;
 }
 
+#bts4 {
+    position: relative;
+    top: -56px;
+    line-height: 7px;
+    color: #000;
+    width: 80px;
+    height: 21px;
+    white-space: nowrap !important;
+    left: 86px;
+    width: 47px !important;
+    box-shadow: none;
+    font-size: 8px;
+}
+
 #update {
     width: 110px;
     font-size: 16px;
@@ -1254,6 +1485,19 @@ padding: 0 10px !important;
     width: 95px!important;
     margin-top: 20px;
 margin-left: 131px;}
+
+
+#updated {
+    font-size: 16px;
+    line-height: 3px;
+    height: 28px !important;
+    color: #000;
+    margin-left: 100px;
+    white-space: nowrap;
+    width: 104px!important;
+    margin-top: 20px;
+    margin-left: 131px;
+}
 
 .heading {
     font-weight: 800;
