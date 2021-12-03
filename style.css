@@ -453,8 +453,24 @@ font-weight: 600;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 	  
+	  .tick{display:none;}
+	  
+	  #bts3{position: relative !important;
+    top: -74px !important;
+    width: 56px !important;
+    left: 61px !important;
+    line-height: 20px !important;
+    font-size: 10px !important;
+  color: #000 !important;}
+	  
 	.form-control{font-size:14px!important;}
 		#bts{white-space: nowrap;}
+		
+		#mail2{position: relative !important;
+    top: -62px !important;
+    left: -33px!important;
+    width: 115% !important;
+}
 	  
 	  #end-editing:before {
     content: "";
@@ -578,10 +594,10 @@ font-weight: 600;
 .pics{width:96px;height:96px;margin-top: -51px;}
 
 #mob{position: relative!important;
-  left: -37px!important;}
+  left: -47px!important;}
   
   #mail{position: relative!important;
-    left: -36px!important;
+     left: -47px!important;
     width: 153px !important;}
 
 .flx6 {
@@ -765,7 +781,7 @@ top: -156px;
 
 .tick {
        position: relative;
-    top: -74px;
+    top: -118px;
     width: 19px;
     left: 227px;
 
@@ -813,7 +829,7 @@ top: -156px;
 	.flx7 {
     position: relative;
     left: -2px;
-    top: 50px;
+    top: 24px;
 }
 
 .box2{
@@ -882,8 +898,8 @@ top: -156px;
 }
 	
 	.tick {
-      position: relative;
-    top: -73px;
+  position: relative;
+    top: -119px;
     width: 16px;
     left: 210px;
 
@@ -990,10 +1006,10 @@ left: 62px;
 }
 	
 	.tick {
-position: relative;
-    top: -73px;
+    position: relative;
+    top: -116px;
     width: 16px;
-    left: 218px;
+    left: 225px
 }
 	
 	.camera {
@@ -1035,6 +1051,23 @@ position: relative;
 
 @media only screen and (max-width: 600px) {
 	.form-control{font-size:14px!important;}
+	
+	#bts3{    width: 47px !important;
+    margin-left: 179px!important;
+    position: relative;
+    top: -55px;
+    color: #000;
+    font-size: 9px;
+}
+
+.tick {
+    position: relative!important;
+    top: -100px!important;
+    width: 18px!important;
+    left: 238px!important;
+}
+
+.tick{display:none;}
 
 	.veri{display:none;}
 	.datetime-input-box-wrapper {
@@ -1053,10 +1086,10 @@ align-items: normmal !important;}
 .cont{margin-top: -20px;}
 	
 	.contact{width: 326px;
-   height: 408px;
+   height: 454px;
     border-radius: 0 0 10px 10px !important;
 }
-::placeholder{color:#9e9e9e!important;font-weight:600;font-size:13px;}
+::placeholder{color:#9e9e9e!important;font-weight:600;font-size:10px;}
 
 	  
 	  input[type="text"]
