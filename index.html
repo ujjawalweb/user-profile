@@ -106,8 +106,8 @@
 			  
 			    
 			 <div class="flx4">
-				<label>Date Of Birth</label>
-  	<input id="textinput"  type="date" placeholder="dd-mm-yyyy" class="form-control">
+				<label for="textinput">Date Of Birth</label>
+ 	<input id="textinput"  type="date" placeholder="dd-mm-yyyy" class="form-control">
 </div>
   
  <div class="flx5">
@@ -148,7 +148,7 @@
               <div class="col-md-12">
 			  <div class="flx6">
 			   <label>Mobile</label> 
-                <input type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button>
+                <input type="number" placeholder="7014154675" class="form-control" id="mob"> <button class="bt" id="bts">Send OTP</button><span class="veri"><input type="number" placeholder="566213" class="form-control" id="for"><button class="bt" id="bts2">Verify</button></span>
             </div>
 			
 		<div class="flx7">
@@ -226,12 +226,71 @@ $(document).ready(function(){
 </script>
 
 <script>
-$(document).ready(function(){
-  $(".camera").click(function(){
-    $(".camera").css("display", "none");
-  });
+$( function() {
+  var from = $( "#fromDate" )
+      .datepicker({
+        dateFormat: "yy-mm-dd",
+        changeMonth: true
+      })
+      .on( "change", function() {
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+    to = $( "#toDate" ).datepicker({
+      dateFormat: "yy-mm-dd",
+      changeMonth: true
+    })
+    .on( "change", function() {
+      from.datepicker( "option", "maxDate", getDate( this ) );
+    });
+
+  function getDate( element ) {
+    var date;
+    var dateFormat = "yy-mm-dd";
+    try {
+      date = $.datepicker.parseDate( dateFormat, element.value );
+    } catch( error ) {
+      date = null;
+    }
+
+    return date;
+  }
 });
 </script>
+
+<script>
+$(document).ready(function(){
+  $("#bts").click(function(){
+    $(".veri").show();
+  });
+ 
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#bts").click(function(){
+   $(".flx7").css("margin-top", "-112px");
+  });
+ 
+});
+</script>
+
+<script>
+if (window.matchMedia('(max-width: 600px)').matches)
+{
+ $(document).ready(function(){
+  $("#bts").click(function(){
+   $(".flx7").css("margin-top", "-147px");
+  });
+ 
+});
+}
+
+</script>
+   
+
+
+
 
 
 
