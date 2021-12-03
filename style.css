@@ -650,7 +650,7 @@ top: -32px;}
 .contact form button, .contact form input, .contact form textarea {
 position: relative!important;
     height: 20px !important;
-    padding: 7px;
+   padding: 0px 10px;
     left: 17px;
     top: -49px!important;
     margin-left: 135px;
