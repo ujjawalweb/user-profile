@@ -453,7 +453,7 @@ font-weight: 600;
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 	  
-	
+	.form-control{font-size:14px!important;}
 	  
 	  #end-editing:before {
     content: "";
@@ -650,7 +650,7 @@ top: -32px;}
 .contact form button, .contact form input, .contact form textarea {
 position: relative!important;
     height: 20px !important;
-   padding: 0px 10px;
+    padding: 0px 10px;
     left: 17px;
     top: -49px!important;
     margin-left: 135px;
@@ -659,7 +659,7 @@ position: relative!important;
 	#selectbasic {
     margin-left: 135px;
     top: -49px;    height: 20px !important;
- padding:0 10px;
+   padding:0 10px;
     position: relative;
 }
 	.heading {
@@ -1033,7 +1033,7 @@ position: relative;
 }
 
 @media only screen and (max-width: 600px) {
-	
+	.form-control{font-size:14px!important;}
 
 	
 	.datetime-input-box-wrapper {
