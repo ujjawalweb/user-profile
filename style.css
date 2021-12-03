@@ -1178,7 +1178,7 @@ padding: 0 10px !important;
     position: relative;
     width: 164px!important;
     height: 20px;
-    padding: 8px!important;
+       padding: 0 10px;
 }
 .flx6 {
     margin-top: -29px;
