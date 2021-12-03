@@ -12,6 +12,15 @@
   box-sizing: border-box;
 }
 
+#bts3{width: 79px;
+    position: relative;
+    top: -81px;
+    color: #000;
+    left: 182px;
+    line-height: 15px;
+}
+.tick{display:none;}
+
 .veri{display:none;}
 
 #end-editing:before{content:"";position:absolute;left:-100px;bottom:
@@ -84,7 +93,7 @@
 #edit{background:transparent!important;}
 #edit:focus{border:none;outline:none;}
 .tick{position: relative;
-    top: -76px;
+    top: -109px;
     width: 23px;
     left: 429px;}
 	
@@ -1053,7 +1062,7 @@ left: 62px;
 	.form-control{font-size:14px!important;}
 	
 	#bts3{    width: 47px !important;
-    margin-left: 179px!important;
+    margin-left: -3px!important;
     position: relative;
     top: -55px;
     color: #000;
@@ -1062,7 +1071,7 @@ left: 62px;
 
 .tick {
     position: relative!important;
-    top: -100px!important;
+    top: -73px!important;
     width: 18px!important;
     left: 238px!important;
 }
