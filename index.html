@@ -15,7 +15,7 @@
 
     <title>KYC Form</title>
 <style>
-
+#my-btn4{display:none;}
 
 
 </style>
@@ -63,6 +63,7 @@
 
  <div class="last-btn">
 <button class="bt" id="my-btn3">Save</button>
+<button class="bt" id="my-btn4">Saved &nbsp; <img src="images/01-09.png" width="18"></button>
 </div>
 		</div>
 		<!-- End .company-info -->
@@ -153,7 +154,8 @@
 			
 		<div class="flx7">
 			   <label>Email</label> 
-                <input   type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail">&nbsp; <img src="images/01-09.png" class="tick">
+                <input   type="email" placeholder="Himanshu.gour@mobzway.com" class="form-control" id="mail"> <button class="bt" id="bts3">Verify</button>&nbsp; <img src="images/01-09.png" class="tick">
+				               
              </div>
 
 			<!-- End #contact-form -->
@@ -289,10 +291,24 @@ if (window.matchMedia('(max-width: 600px)').matches)
 </script>
    
 
+<script>
+$(document).ready(function(){
+  $("#my-btn3").click(function(){
+    $(this).hide();
+	 $("#my-btn4").show();
+  });
 
+});
+</script>
 
-
-
+<script>
+$(document).ready(function(){
+  $("#bts3").click(function(){
+   $(".tick").css("display", "block");
+  });
+ 
+});
+</script>
 
 </body>
 </html>
