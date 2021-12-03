@@ -452,6 +452,9 @@ font-weight: 600;
   and (max-device-width: 875px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+	  
+	  .form-control{font-size:10px!important;}
+	  
 	  #end-editing:before {
     content: "";
     position: absolute;
@@ -1031,7 +1034,7 @@ position: relative;
 
 @media only screen and (max-width: 600px) {
 	
-
+.form-control{font-size:10px!important;}
 	
 	.datetime-input-box-wrapper {
     display: inline-flex;
