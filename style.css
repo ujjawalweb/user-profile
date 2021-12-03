@@ -659,7 +659,7 @@ position: relative!important;
 	#selectbasic {
     margin-left: 135px;
     top: -49px;    height: 20px !important;
-    padding: 7px;
+ padding:0 10px;
     position: relative;
 }
 	.heading {
